@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>калькулятор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calculator">
+    <div class="screen" id="screen">0</div>
+    <div class="numb-container">
+        <a onclick="AC()">AC</a>
+        <a onclick="Del()">DEl</a>
+        <a onclick="ClickButton('(')">(</a>
+        <a onclick=" CheckForRightBracket()">)</a>
+    </div>
+    <div class="numb-container">
+        <a onclick="ClickButton(1)">1</a>
+        <a onclick="ClickButton(2)">2</a>
+        <a onclick="ClickButton(3)">3</a>
+        <a onclick="same()">=</a>
+    </div>
+    <div class="numb-container">
+        <a onclick="ClickButton(4)">4</a>
+        <a onclick="ClickButton(5)">5</a>
+        <a onclick="ClickButton(6)">6</a>
+        <a onclick="check(), ClickButton('*')">*</a>
+    </div>
+    <div class="numb-container">
+        <a onclick="ClickButton(7)">7</a>
+        <a onclick="ClickButton(8)">8</a>
+        <a onclick="ClickButton(9)">9</a>
+        <a onclick="check(), ClickButton('/')">/</a>
+    </div>
+    <div class="numb-container">
+        <a class="border-radius-bottom-left" onclick="ClickButton(0)">0</a>
+        <a onclick="check(), ClickButton('.')">.</a>
+        <a onclick="MinusPlus(),ClickButton('-')">-</a>
+        <a class="border-radius-bottom-right" onclick="check(), MinusPlus(), ClickButton('+')">+</a>
+    </div>
+</div>
+</div>
+</body>
+</html>
+
